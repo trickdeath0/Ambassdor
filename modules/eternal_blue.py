@@ -35,7 +35,7 @@ def execute_msfconsole():
         terminal_command = ['exo-open', '--launch', 'TerminalEmulator', 'msfconsole', '-r', 'commands.txt']
         subprocess.Popen(terminal_command)
     except Exception as e:
-        print(f"Error launching msfconsole: {e}")
+        print(f" [-] Error launching msfconsole: {e}")
 
 
 def eternal_blue():
@@ -68,7 +68,7 @@ def eternal_blue():
             write_commands(ip_address, target_ip_address, standard=True)
             execute_msfconsole()
         else:
-            print("Invalid choice.")
+            print(" [-] Invalid choice.")
 
     elif eternal_choice == "2":
         clear_screen()
@@ -96,6 +96,6 @@ def eternal_blue():
             write_commands(ip_address, None, standard=True, multiple_targets=True)
             execute_msfconsole()
         else:
-            print("Invalid choice.")
+            print(" [-] Invalid choice.")
     else:
-        print("Invalid choice.")
+        print(" [-] Invalid choice.")

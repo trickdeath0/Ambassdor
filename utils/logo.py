@@ -1,5 +1,8 @@
+from utils.colors import *
+
+
 def print_logo():
-    print("\n\n\033[1;33m")  # צבע צהוב מודגש
+    print(f"\n\n{YELLOW}")
     print("-" * 75)
     print(" █████╗ ███╗   ███╗██████╗  █████╗ ███████╗███████╗██████╗  ██████╗ ██████╗ ")
     print("██╔══██╗████╗ ████║██╔══██╗██╔══██╗██╔════╝██╔════╝██╔══██╗██╔═══██╗██╔══██╗")
@@ -9,7 +12,10 @@ def print_logo():
     print("╚═╝  ╚═╝╚═╝     ╚═╝╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝")
     print("-" * 75)
     print("\t\t Hybrid Penetration Testing Tool")
-    print("\033[38;5;245m")  # צבע אפור
+    print(f"{GRAY}")
     print("\t\t [Created by Shay Giladi]")
-    print("\033[0m")
+    print(f"{RESET}")
     print("\t\t Contact: shaygiladi97@gmail.com\n")
+
+
+print_logo()

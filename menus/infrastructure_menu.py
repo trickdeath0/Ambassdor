@@ -1,6 +1,7 @@
 from utils.logo import print_logo
 from modules.eternal_blue import eternal_blue
 from modules.python_server import python_server
+from modules.wifi_attack import wifi_attack
 
 
 
@@ -35,7 +36,7 @@ def infrastructure_attacks():
     elif attack_choice == "5":
         print("Running MITM...")
     elif attack_choice == "6":
-        print("Running Wi-Fi...")
+        wifi_attack()
     elif attack_choice == "7":
         python_server()
     elif attack_choice == "8":
